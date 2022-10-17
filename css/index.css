@@ -428,6 +428,10 @@
     margin: 0 auto;
 }
 
+.main-page > .section4 > .img4 > .img5  {
+    position: relative;
+}
+
 .main-page > .section4 > .img4 > .img5 > div > b {
     font-size: 40px;
     font-family: 'Exo', sans-serif;
@@ -442,39 +446,51 @@
     margin-bottom: 35px;
 }
 
-.img5 > div {
+.img5 > .img-text {
     position: absolute;
-    left:320px;
-    top:3540px;
+    left:50%;
+    top:50%;
     text-align: center;
+    transform: translate(-50%,-50%);
+}
+.img4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main-page > .section4 > .img6 > .img7 > div > b {
+.section4>.img7 > .img-text2 {
+    position: relative;
+}
+
+.img7 > div {
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+
     font-size: 40px;
     font-family: 'Exo', sans-serif;
     font-weight: 800;
     color:#eeeeee;
     margin-bottom: 20px;
 }
-.main-page > .section4 > .img6 > .img7 > div > p {
+
+
+.img7 > div > b {
+    font-size: 40px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    color:#eeeeee;
+    margin-bottom: 20px;
+}
+
+.main-page > .section4 > .img4 > .img7 > div > p {
     font-size: 16px;
     font-family: 'Exo', sans-serif;
     color:#eeeeee;
-    margin-bottom: 35px;
-}
+} 
 
-.img7 > a{
-    position: absolute;
-    right:0;
-    top: 3400px;
-}
-
-.img7 > div{
-    position: absolute;
-    right: 310px;
-    top:3500px;
-    text-align: center;
-}
 /* =================================================================== */
 /* =================================================================== */
 /* =================================================================== */
@@ -502,16 +518,47 @@ footer > .f-left {
     width:100%;
     margin:0 auto;
 }
-footer > .f-left > a > strong {
+
+.f-left {
+    margin: 0 0 45px;
     font-size: 16px;
     color: #555;
     font-family: 'Noto Sans KR',sans-serif;
 }
 
-footer > .f-left > a {
+footer > .f-right2 {
+    max-width: 1760px;
+    width:100%;
+    margin:0 auto;
+}
+
+.f-middle2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1320px;
+    width : 100%;
+    margin: 0 auto;
+}
+.f-middle2 > div> ul >li {
     font-size: 16px;
     color: #555;
     font-family: 'Noto Sans KR',sans-serif;
+}
+
+.f-final {
+    font-size : 12px;
+    color: #b3b3b3;
+    padding:20px 0px;
+
+    max-width: 1320px;
+    width : 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
