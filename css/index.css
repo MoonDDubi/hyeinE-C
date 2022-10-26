@@ -726,8 +726,9 @@ footer > .f-right2 {
 
         /* align-items: top; */
     }
+
     .main-page > .section1 > .main-center > ul > li > figure >img {
-        width: 727px;
+        width: 100%;
         padding: 0 0 50px 0;
     }
     
@@ -852,7 +853,7 @@ footer > .f-right2 {
     /* 메인화면(섹션2->백그라운드 이미지 위에 텍스트) */
 
     .main-page > .section2 {
-        width: 767px;
+        width: 100%;
         height: 100vh;
     
         background: url('../img/mainBg.png');
@@ -1110,7 +1111,7 @@ footer > .f-right2 {
     }
     .img5 > .img-text {
         position: absolute;
-        left:40%;
+        left:48%;
         top:55%;
         text-align: center;
         /* transform: translate(-50%,-50%); */
@@ -1120,12 +1121,12 @@ footer > .f-right2 {
         display: flex;
         flex-wrap: wrap;
         /* justify-content: space-between; */
-        width:960px;
+        width:100%;
         height: 400px;
     }
 
     .main-page > .section4 > .img-total> .img4 > .img5 > a > img{
-        width: 767px;
+        width: 100%;
         height: 200px;
     }
     .main-page > .section4 > .img-total> .img7 > .img8 {
@@ -1136,6 +1137,11 @@ footer > .f-right2 {
         font-weight: 800;
         color:#eeeeee;
         margin-bottom: 20px;
+    }
+    
+    .img7 {
+        width: 100%;
+        /* position: relative; */
     }
     .img8 {
         position: relative;
@@ -1163,7 +1169,7 @@ footer > .f-right2 {
     } 
 
     .main-page> .section4 > .img-total> .img4 > .img7 > .img8 > a > img{
-        width: 767px;
+        width: 100%;
         height: 200px;
     }
 
@@ -1195,8 +1201,9 @@ footer > .f-right2 {
     
     .f-middle {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        /* align-items: center; */
     }
     footer > .f-left {
         max-width: 1760px;
