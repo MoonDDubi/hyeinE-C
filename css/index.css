@@ -572,6 +572,9 @@ footer > .f-right2 {
     color: #555;
     font-family: 'Noto Sans KR',sans-serif;
 }
+.f-middle2 > div> ul >li > br {
+    display: none;
+}
 
 .f-final {
     font-size : 12px;
@@ -897,11 +900,15 @@ footer > .f-right2 {
         font-weight: 300;
         margin-bottom: 60px;
         color:#fff;
+        word-break: keep-all;
     }
     
     /* 지속적인 연구개발->강조 */
     .main-page > .section2 > .main-middle > .main-middle2 > ul > li > .text-top > p > strong{
         color:#fff;
+    }
+    .main-page > .section2 > .main-middle > .main-middle2 > ul > li > .text-top > p > br{
+        display: none;
     }
     
     /* 이미지 4개 */
@@ -1108,6 +1115,7 @@ footer > .f-right2 {
         font-family: 'Exo', sans-serif;
         color:#eeeeee;
         margin-bottom: 25px;
+        word-break: keep-all;
     }
     .img5 > .img-text {
         position: absolute;
@@ -1166,6 +1174,7 @@ footer > .f-right2 {
         font-family: 'Exo', sans-serif;
         color:#eeeeee;
         margin-bottom: 25px;
+        word-break: keep-all;
     } 
 
     .main-page> .section4 > .img-total> .img4 > .img7 > .img8 > a > img{
@@ -1177,15 +1186,12 @@ footer > .f-right2 {
         width:100%;
     }
 
-
-
-
-
-
-
-
-
-
+    /* 섹션4->이미지 두개 가로정렬 */
+    /* 섹션4->이미지 두개 가로정렬 */
+    /* 섹션4->이미지 두개 가로정렬 */
+    /* 섹션4->이미지 두개 가로정렬 */
+    /* 섹션4->이미지 두개 가로정렬 */
+    /* 섹션4->이미지 두개 가로정렬 */
 
 
     footer {
@@ -1237,6 +1243,10 @@ footer > .f-right2 {
         font-size: 13px;
         color: #555;
         font-family: 'Noto Sans KR',sans-serif;
+        /* margin: 3px 0; */
+    }
+    .f-middle2 > div> ul >li > br {
+        display: inline-block;
     }
     
     .f-final {
@@ -1249,6 +1259,7 @@ footer > .f-right2 {
         margin: 0 auto;
     
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
