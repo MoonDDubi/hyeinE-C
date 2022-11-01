@@ -1,7 +1,6 @@
 @import url('common.css');
 
 .header1{
-    /* max-width: 1920px; */
     width: 100%;
 
     display:flex;
@@ -13,11 +12,20 @@
     
     position: fixed;
     left:0; top:0;
+    z-index: 100;
 }
 
 .header1 > .header2 > div:hover{
-    background-color: #fff;
+    /* background-color: #fff; */
     border-bottom: 3px solid #ff8b00;
+}
+
+.header1 > .header2 > div > a{
+    color:#fff;
+}
+
+.header1.active > .header2 > div > a{
+    color:#000;
 }
 
 .header1 > .header2 > div > a:hover {
@@ -46,11 +54,6 @@
     line-height: 100px;
 }
 
-/* .header1 > .header2 > .header3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .header1 > .header3 {
     display: flex;
@@ -66,9 +69,6 @@
     padding: 0 20px 0 0;
 }
 
-.header1:hover{
-    background-color: #fff;
-} 
 
 
 /* =================================================================== */
@@ -81,21 +81,25 @@
     height: 100vh;
     font-family: 'Exo',sans-serif;
 
-    background-image: url('../img/59650371668d5b3786cb723a014c6ae8.jpg');
+    background-image: url('../img/01.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    
     background-size:230vw;
     /* width: 768~1000까지는 vh로 별도로 잡아주기 */
+
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: bg 5s forwards;
-}   
-@keyframes bg {
-    100%{background-size:170vw;}
+    animation: bg 3s forwards;
 }
+
+@keyframes bg {
+    100%{background-size:100vw;}
+}
+
 /* 큰글씨 */
 .main-page > .main-top p:nth-of-type(1) {
     font-size: 78px;
@@ -629,6 +633,8 @@ footer > .f-right2 {
 
         position: fixed;
         left:0; top:0;
+
+        z-index: 100;
     }
 
     .header1 > div > a > img{
@@ -637,13 +643,17 @@ footer > .f-right2 {
     }
     
     .header1 > .header2 > div:hover{
-        background-color: #fff;
+        /* background-color: #fff; */
         border-bottom: 3px solid #ff8b00;
     }
     
+    /* .header1.active > .header2 > div > a{
+        color:#000;
+    }
+
     .header1 > .header2 > div > a:hover {
         color:#ff8b00;
-    }
+    } */
     
     /* 로고에 패딩줌 */
     .header1 > div:nth-of-type(1) {
@@ -1318,6 +1328,8 @@ footer > .f-right2 {
 
         position: fixed;
         left:0; top:0;
+
+        z-index: 100;
     }
 
     .header1 > div > a > img{
@@ -1326,7 +1338,7 @@ footer > .f-right2 {
     }
     
     .header1 > .header2 > div:hover{
-        background-color: #fff;
+        /* background-color: #fff; */
         border-bottom: 3px solid #ff8b00;
     }
     
